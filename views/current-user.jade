@@ -1,0 +1,6 @@
+extends layouts/main
+
+block content
+  h1 Current User
+
+  pre !{content.replace(/\n/g, '<br/>').replace(/ /g, '&nbsp;')}

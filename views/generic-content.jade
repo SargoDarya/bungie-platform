@@ -1,0 +1,6 @@
+extends layouts/main
+block content
+  h1= platformCall
+  pre !{content.replace(/\n/g, '<br/>').replace(/ /g, '&nbsp;')}
+  - if (error)
+    div.error= error

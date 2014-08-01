@@ -2,7 +2,7 @@
   "name": "bungie-platform",
   "version": "0.0.1",
   "description": "An accessor library for the bungie.net platform",
-  "main": "index.js",
+  "main": "lib/platform.js",
   "dependencies": {
     "component-ajax": "^0.0.2",
     "express": "^4.7.2",
