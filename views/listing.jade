@@ -1,0 +1,18 @@
+extends layouts/main
+
+mixin parseMethods(methods, prefix)
+  ul
+    - each method in methods
+      li
+        - if (method.childs.length>0)
+          div.parent= method.name
+          mixin parseMethods(method.childs, prefix+method.name+'.')
+        - else
+          div.methodName= method.name
+          code= prefix+method.name+method.signature
+
+block content
+  .row
+    h1 Platform Listing
+
+  mixin parseMethods(methods, 'bungieNetPlatform.')

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Bungie Test</title>
+    <script>
+    var ServerVars = {
+      WebAuthCookieDomain: ".bungie.net",
+      WebAuthCookieName: "bungleatk",
+      StaticHostEnabled: true,
+      StaticHost: "static01.bungie.net",
+      ContentVersion: "cv=3983588666&av=1890151607"
+    };
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <script src="/js/platform/all.js"></script>
+
+    <script>
+    bungieNetPlatform.platformSettings.initialize({
+      platformUrl: "http://www.bungie.net/Platform",
+      baseUrl: "/",
+      currentLocale: 'en',
+      locInherit: 'true' == 'true',
+      isMobileDevice: 'false' == 'true',
+      isTouchDevice: Modernizr.touch,
+      renderContentEditLinks: 'false' == 'true',
+    	internalLinkRegex: /https?\:\/\/(((www)|(betanext)|(alpha)|(nike)|(bnetdev)|(bnetint)|(static-internal)|(local-static)|(static01))\.bungie(store)?\.(net|com))/gi
+    });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

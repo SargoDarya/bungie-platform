@@ -1,0 +1,29 @@
+{
+  "name": "bungie-platform",
+  "version": "0.0.1",
+  "description": "An accessor library for the bungie.net platform",
+  "main": "index.js",
+  "dependencies": {
+    "component-ajax": "^0.0.2",
+    "express": "^4.7.2",
+    "extend": "^1.3.0",
+    "jade": "^1.5.0",
+    "jquery-deferred": "^0.3.0",
+    "request": "^2.39.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "bitbucket.org:sargodarya/bungie-platform.git"
+  },
+  "keywords": [
+    "bungie",
+    "destiny",
+    "api"
+  ],
+  "author": "Daniel Klingmann <sargodarya@gmail.com>",
+  "license": "MIT"
+}
