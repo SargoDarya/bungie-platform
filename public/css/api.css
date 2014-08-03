@@ -32,3 +32,12 @@ ul li ul li {
   font-size: 18px;
   color: #777;
 }
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 100px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #E5E5E5;
+}
