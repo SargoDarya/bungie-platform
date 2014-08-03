@@ -17,13 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "bitbucket.org:sargodarya/bungie-platform.git"
+    "url": "github.com:sargodarya/bungie-platform.git"
   },
   "keywords": [
     "bungie",
     "destiny",
     "api"
   ],
-  "author": "Daniel Klingmann <sargodarya@gmail.com>",
-  "license": "MIT"
+  "author": "Daniel Klingmann <sargodarya@gmail.com>"
 }
