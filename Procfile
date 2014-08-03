@@ -1,1 +1,1 @@
-web: node sample.js
+web: PORT=$PORT node sample.js
