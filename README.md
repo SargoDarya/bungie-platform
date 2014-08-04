@@ -3,7 +3,7 @@
 This is the platform.js file from bungie.net used to do nearly everything. It's reverse engineered and made
 available as a node.js module.
 
-Note: This is not maintained by bungie.
+Note: This is not maintained or endorsed by bungie. I'm not affiliated with bungie in any way (although I'd wish I was).
 
 ## Requirements
 
@@ -21,7 +21,8 @@ Or if you just want to check out the API:
     cd bungie-platform
     node sample
     
-Then head to `http://localhost:8080/api/` and you can see all exposed calls.
+Then head to `http://localhost:8080/api/` and you can see all exposed calls. There's also a sample
+API doc available on heroku at [http://bungie-platform.herokuapp.com](http://bungie-platform.herokuapp.com).
  
 ## Getting started
 
