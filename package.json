@@ -15,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-docs": "./node_modules/.bin/jsdoc -d ./docs/ ./lib/platform.js"
+    "generate-docs": "./node_modules/.bin/jsdoc -c ./jsdoc.conf.json"
   },
   "repository": {
     "type": "git",
