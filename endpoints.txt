@@ -9,7 +9,7 @@ http://www.bungie.net/platform/User/GetCounts/
 http://www.bungie.net/platform/User/GetBungieNetUserById/[userId]/
 http://www.bungie.net/platform/User/GetUserAliases/[userId]/
 http://www.bungie.net/platform/User/SearchUsers/
-http://www.bungie.net/platform/User/GetBungieAccount/[h]/[g]/
+http://www.bungie.net/platform/User/GetBungieAccount/[membershipId]/[membershipType]/
 http://www.bungie.net/platform/User/SearchUsersPaged/[searchTerm]/[page]/
 http://www.bungie.net/platform/User/SearchUsersPaged/[h]/[i]/[g]/
 http://www.bungie.net/platform/User/GetNotificationSettings/
@@ -216,10 +216,10 @@ http://www.bungie.net/platform/Tokens/DestinyUnlockHistory/[d]/
 http://www.bungie.net/platform/Destiny/Manifest/
 http://www.bungie.net/platform/Destiny/Manifest/[i]/[j]/
 http://www.bungie.net/platform/Destiny/SearchDestinyPlayer/[d]/[e]/
-http://www.bungie.net/platform/Destiny/[membershipType]/Account/[accountId]/
-http://www.bungie.net/platform/Destiny/[e]/Account/[d]/Character/[g]/
-http://www.bungie.net/platform/Destiny/[membershipType]/Account/[accountId]/Character/[characterId]/Complete/
-http://www.bungie.net/platform/Destiny/[membershipType]/Account/[d]/Character/[g]/Inventory/
+http://www.bungie.net/platform/Destiny/[membershipType]/Account/[membershipId]/
+http://www.bungie.net/platform/Destiny/[membershipType]/Account/[membershipId]/Character/[characterId]/
+http://www.bungie.net/platform/Destiny/[membershipType]/Account/[membershipId]/Character/[characterId]/Complete/
+http://www.bungie.net/platform/Destiny/[membershipType]/Account/[membershipId]/Character/[characterId]/Inventory/
 http://www.bungie.net/platform/Destiny/[membershipType]/Account/[d]/Character/[h]/Inventory/[e]/
 http://www.bungie.net/platform/Destiny/[membershipType]/Account/[d]/Character/[g]/Activities/
 http://www.bungie.net/platform/Destiny/[membershipType]/Account/[d]/Character/[g]/Progression/

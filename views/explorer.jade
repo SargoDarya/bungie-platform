@@ -1,20 +1,24 @@
-div
-  | Select Endpoint you want to call:
-  select#options
+extends layouts/main
 
-hr
+block content
+  div
+    div
+      | Select Endpoint you want to call:
+      select#options
 
-.request-elements
-  | Select an endpoint first
+    hr
 
-hr
-button#send-request Send Request
+    .request-elements
+      | Select an endpoint first
 
-hr
+    hr
+    button#send-request Send Request
 
-div
-  | Response
-  #response
+    hr
 
-script(src="/js/jquery-2.1.1.min.js")
-script(src="/js/explorer.js")
+    div
+      | Response
+      #response
+
+  script(src="/js/jquery-2.1.1.min.js")
+  script(src="/js/explorer.js")
