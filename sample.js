@@ -20,6 +20,10 @@ app.set('views', './views');
 app.use(express.static('./public'));
 app.use('/api', router);
 
+// proxy router
+var proxyRouter = express.Router();
+app.use('/proxy', proxyRouter);
+
 /** @type API **/
 api = new API(router, platform);
 
