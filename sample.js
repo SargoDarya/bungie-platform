@@ -2,6 +2,9 @@ var express = require('express');
 var API = require('./lib/api');
 var Proxy = require('./lib/proxy');
 var Platform = require('./platform');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var cors = require('cors');
 
 // Different routers
 var router = express.Router();
@@ -21,19 +24,9 @@ app.set('view engine', 'jade');
 app.set('views', './views');
 
 // express middlewares
-app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-
-    // intercept OPTIONS method
-    if ('OPTIONS' == req.method) {
-      res.send(200);
-    }
-    else {
-      next();
-    }
-});
+app.use(cors({ origin: true, credentials: true }));
+app.use(bodyParser());
+app.use(cookieParser());
 app.use(express.static('./public'));
 app.use('/api', router);
 app.use('/proxy', proxyRouter);
