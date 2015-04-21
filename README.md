@@ -19,6 +19,7 @@ Or if you just want to check out the API:
 
     git clone git@github.com:SargoDarya/bungie-platform.git
     cd bungie-platform
+    npm install
     node sample
     
 Then head to `http://localhost:8080/api/` and you can see all exposed calls. There's also a sample
